@@ -1,0 +1,14 @@
+package com.bridgelabz.parking;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class ParkingLotTest {
+    //UC1 : Ability To Park Car
+    @Test
+    public void givenVehicle_WhenParked_ShouldReturnTrue() {
+        ParkingLot parkingLot = new ParkingLot();
+        boolean isParked = parkingLot.park(new Object());
+        Assert.assertTrue(isParked);
+    }
+}
